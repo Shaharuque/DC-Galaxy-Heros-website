@@ -1,3 +1,4 @@
+/* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins&family=Raleway:wght@500;700&family=Urbanist:wght@100;200;500&display=swap');
 
 
@@ -6,10 +7,10 @@ body{
     font-family: 'Raleway', sans-serif;
     
 }
+/* Nav Menu styling */
 .header-title{
     color:aqua;
-    margin:20px 10px;
-    
+    margin:20px 10px; 
 }
 nav{
             
@@ -27,30 +28,27 @@ nav a{
     font-size: 1.5em;
     margin-right: 20px;
 }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Banner section styling */
 .banner{
-    /* display: flex; */
-    /* height: 100vh;   */
-    /* flex-wrap: wrap; */
-    /* min-height: 500px; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 .banner-left{
-     /*flex:1; means parent banner ar half portion for banner-left and half portion for banner-right*/
      width: 50%;
      color: white;
      display: flex;
-     align-items: center;    /*top-bottom a element center hobey*/
+     align-items: center;                 /*top-bottom a element center hobey*/
      grid-column-gap: 20px ;
 }
 .banner-title{
     font-size: 60px;
     white-space: nowrap;
-    position: relative;/*jar shapekhey sorbey tar position relative korey ditey hobey*/
+    position: relative;                   /*jar shapekhey sorbey tar position relative korey ditey hobey*/
     color: transparent;
 
 }
@@ -60,7 +58,7 @@ nav a{
     position: absolute;
     top: 0;
     left: 0;
-    animation: typing 4s linear  infinite;  /*cuz ai title ar opor animation hobey*/
+    animation: typing 4s linear  infinite;          /*cuz ai title ar opor animation hobey*/
 }
 @keyframes typing {
     0% {
@@ -204,20 +202,19 @@ nav a{
     cursor: pointer;
     transition: background-color 0.5s linear, border 0.5s linear;
 }
-.banner-read:hover{    /* mouse button ar kachey dhorley color change hobey*/
+.banner-read:hover{                              /* mouse button ar kachey dhorley color change hobey*/
     background-color: aqua;
     border: 2px solid rgb(32, 207, 207);
 }
 .banner-right{   
     width: 50%;
     display: flex;
-    justify-content: center; /*left-right a element center hobey*/
-    align-items: center;    /*top-bottom a element center hobey*/
+    justify-content: center;                    /*left-right a element center hobey*/
+    align-items: center;                        /*top-bottom a element center hobey*/
 }
 .banner-right img{
     width: 440px;
     height: 414px;
-    
 }
 .banner-right img:hover{
     border: 3px solid aqua;
@@ -235,7 +232,7 @@ nav a{
     margin: 50px;
 }
 
-/* popular-collections styling */
+/* Popular comics collection section styling */
 .section-title{
     display: flex;
     justify-content: center;
@@ -291,7 +288,7 @@ nav a{
 .fa-star{
     font-size: 12px;
 }
-.fa-star.filled{ /*same element ar doita class bujhay(no gap between)*/
+.fa-star.filled{                      /*same element ar doita class bujhay(no gap between)*/
     color: #FFC014;
 }
 .fa-star.empty{
@@ -311,11 +308,10 @@ nav a{
     justify-content: flex-end;
 
 }
-
 .fa-arrow-right{
     margin-left: 5px;
 }
-/* Top-picks section styling */
+/* Bonus section/Top-picks section styling */
 .Top-picks{
     margin-top: 50px;
 }
@@ -325,7 +321,7 @@ nav a{
     color: #868383;
     margin-bottom: 20px;
 }
-.top-actionfigures{                /*change*/
+.top-actionfigures{                
     display: grid;    
     grid-template-columns: repeat(3,1fr);;
     justify-content: center;
@@ -337,7 +333,7 @@ nav a{
 .figure-banner img{
     height: 280px;
     width: 280px;
-    object-fit: cover; /*image ratio thik rakhar jnno*/
+    object-fit: cover; 
     border-radius: 5px;
     margin-top: 10px;
     cursor: pointer;
@@ -368,13 +364,13 @@ nav a{
     margin-right: 100px;
 }
 .figure-banner:hover img{
-    transform: scale(1.2); /*150% zoom hobey photo*/
+    transform: scale(1.2);                        /*120% zoom hobey photo*/
 }
 img { /*img ar transition hobey*/
     transition: transform 1s ease-in-out ;
 } 
 
-/* Footer section */
+/* Footer section/copyright section styling */
 footer{
     margin-top: 50px;
     background: #0A0826;
