@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins&family=Raleway:wght@500;700&family=Urbanist:wght@100;200;500&display=swap');
+
+
+body{
+    background-color: #121212;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner{
+    display: flex;
+    height: 100vh;  /*height: 100vh; means screen size 100px holey banner size 100px hobey abr screen height600px holey baanner o 600px hobey */  
+    flex-wrap: wrap;
+}
+.banner-left{
+     /*flex:1; means parent banner ar half portion for banner-left and half portion for banner-right*/
+     width: 50%;
+     color: white;
+     display: flex;
+     align-items: center;    /*top-bottom a element center hobey*/
+     
+}
+.banner-title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;/*jar shapekhey sorbey tar position relative korey ditey hobey*/
+    color: transparent;
+
+}
+.banner-title::before{
+    content: 'DC Comics Heros';
+    color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: typing 4s linear  infinite;  /*cuz ai title ar opor animation hobey*/
+}
+@keyframes typing {
+    0% {
+        content: 'D|';
+    }
+
+    4% {
+        content: 'DC|';
+    }
+
+    6% {
+        content: 'DC |';
+    }
+
+    8%{
+        content: 'DC C|';
+    }
+
+    12% {
+        content: 'DC Co|';
+    }
+
+    16% {
+        content: 'DC Com|';
+    }
+
+    20% {
+        content: 'DC Comi|';
+    }
+
+    24% {
+        content: 'DC Comic|';
+    }
+
+    28% {
+        content: 'DC Comics|';
+    }
+
+    32% {
+        content: 'DC Comics |';
+    }
+
+    36% {
+        content: 'DC Comics H|';
+    }
+
+    40% {
+        content: 'DC Comics He|';
+    }
+
+    44% {
+        content: 'DC Comics Her|';
+    }
+
+    48% {
+        content: 'DC Comics Hero|';
+    }
+
+    52% {
+        content: 'DC Comics Heros|';
+    }
+    53%,
+    83% {
+        content: 'DC Comics Heros|';
+    }
+
+    84% {
+        content: 'DC Comics Hero|';
+    }
+
+    85% {
+        content: 'DC Comics Her|';
+    }
+
+    86% {
+        content: 'DC Comics He|';
+    }
+
+    87% {
+        content: 'DC Comics H|';
+    }
+
+    88% {
+        content: 'DC Comics |';
+    }
+
+    89% {
+        content: 'DC Comics|';
+    }
+
+    90% {
+        content: 'DC Comic|';
+    }
+
+    91% {
+        content: 'DC Comi|';
+    }
+
+    92% {
+        content: 'DC Com|';
+    }
+
+    93% {
+        content: 'DC Co|';
+    }
+
+    94% {
+        content: 'DC C|';
+    }
+
+    96% {
+        content: 'DC |';
+    }
+
+    97% {
+        content: 'DC|';
+    }
+
+    98% {
+        content: 'D|';
+    }
+
+    99% {
+        content: '|';
+    }
+    100% {
+        content: '|';
+    }
+}
+.banner-text{
+    margin-top: 10px;
+    /* color: black; */
+}
+.banner-read{
+    margin-top: 15px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid blueviolet;
+    color: azure; 
+    cursor: pointer;
+    transition: background-color 0.5s linear, border 0.5s linear;
+}
+.banner-read:hover{    /* mouse button ar kachey dhorley color change hobey*/
+    background-color: aqua;
+    border: 2px solid rgb(32, 207, 207);
+}
+.banner-right{   
+    width: 50%;
+    display: flex;
+    justify-content: center; /*left-right a element center hobey*/
+    align-items: center;    /*top-bottom a element center hobey*/
+}
+.banner-right img{
+    width: 440px;
+    height: 414px;
+    
+}
+.banner-right img:hover{
+    border: 3px solid aqua;
+    transform: scale(1.2);
+}
+
+/* logos styling */
+.logos{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    margin: 50px;
+}
+
+/* popular-collections styling */
+.section-title{
+    display: flex;
+    justify-content: center;
+    color: #868383;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.individual-comic{
+    padding: 10px;
+    border: 2px solid aqua;
+}
+.comicBanner{
+    display: flex;
+    justify-content: center;
+}
+.comicBanner img{
+    height: 280px;
+    width: 280px;
+    object-fit: cover; /*image ratio thik rakhar jnno*/
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.comicDetails{
+    margin-left: 38px;
+}
+.comic-title{
+    margin: 0;
+    margin-top: 20px;
+    color: #868383;
+}
+.comicPrice{
+    margin: 0;
+    margin-top: 10px;
+    height: 36px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+}
+.comicStory{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(240, 128, 221);
+}
+
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{ /*same element ar doita class bujhay(no gap between)*/
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #FFFFFF;
+}
+
+.ratings{
+    color: #868383;
+    margin-left: 10px;
+}
+
+.more-collections{
+    margin-top: 30px;
+    text-decoration: none;
+    color: aqua;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.fa-arrow-right{
+    margin-left: 5px;
+}
+/* Top-picks section styling */
+.Top-picks{
+    margin-top: 50px;
+}
+.topPick-title{
+    display: flex;
+    justify-content: center;
+    color: #868383;
+}
+.top-actionfigures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.action-figure{
+    margin-right: 100px;
+}
+
+.figure-banner img{
+    height: 280px;
+    width: 280px;
+    object-fit: cover; /*image ratio thik rakhar jnno*/
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+ .figure-banner img:hover{
+    border: 2px solid blueviolet;
+} 
+.figure-description{
+    top: 100px;
+    left: 90px;
+    
+}
+.figure-description .figure-name{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    font-weight: 600;
+    font-family: Inter;
+   
+}
+.figure-description .figure-price{
+    display: flex;
+    justify-content: center;
+    color: grey;    
+    font-weight: 600;
+    font-family: Inter;
+    font-style: normal;
+}
+.figure-banner:hover img{
+    transform: scale(1.2); /*150% zoom hobey photo*/
+}
+img { /*img ar transition hobey*/
+    transition: transform 1s ease-in-out ;
+} 
+
+/* Footer section */
+footer{
+    margin-top: 50px;
+    background-color: #b5a9ec;
+    display: flex;
+    justify-content: center;
+ }
