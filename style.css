@@ -405,6 +405,10 @@ footer{
     .container{
         width: 100%; 
     }
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .banner{
         display: grid;
         grid-template-columns: repeat(1,1fr);
